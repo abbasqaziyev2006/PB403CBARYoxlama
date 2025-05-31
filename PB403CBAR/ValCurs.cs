@@ -6,15 +6,15 @@ namespace PB403CBAR
     public class ValCurs
     {
         [XmlElement(ElementName = "ValType")]
-        public List<ValType> ValType { get; set; }
+        public required List<ValType> ValType { get; set; }
 
         [XmlAttribute(AttributeName = "Date")]
-        public string Date { get; set; }
+        public required string Date { get; set; }
 
         [XmlAttribute(AttributeName = "Name")]
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
         [XmlAttribute(AttributeName = "Description")]
-        public string Description { get; set; }
+        public required string Description { get; set; }
     }
 }

@@ -6,9 +6,9 @@ namespace PB403CBAR
     public class ValType
     {
         [XmlElement(ElementName = "Valute")]
-        public List<Valute> Valute { get; set; }
+        public required List<Valute> Valute { get; set; }
 
         [XmlAttribute(AttributeName = "Type")]
-        public string Type { get; set; }
+        public required string Type { get; set; }
     }
 }
