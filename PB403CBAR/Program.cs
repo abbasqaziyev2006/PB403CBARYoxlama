@@ -11,7 +11,7 @@ namespace PB403CBAR
     {
         static async Task Main(string[] args)
         {
-            var endpoint = "https://www.cbar.az/currencies/22.05.2025.xml";
+            var endpoint = "https://www.cbar.az/currencies/31.05.2025.xml";
             var httpClient = new HttpClient();
             var content = await httpClient.GetStringAsync(endpoint);
 
